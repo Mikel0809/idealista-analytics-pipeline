@@ -42,4 +42,4 @@ models:
       +schema: dbt_staging
     marts:
       +materialized: table
-      +schema: dbt_marts
+      +schema: dbt_mart
