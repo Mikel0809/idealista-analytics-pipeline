@@ -1,0 +1,14 @@
+# dbt and BigQuery connector
+dbt-core
+dbt-bigquery
+
+# Apache Airflow
+apache-airflow
+
+# Data processing and utilities
+pandas
+requests
+python-dotenv
+
+# Testing
+pytest
