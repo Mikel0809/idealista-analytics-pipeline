@@ -1,0 +1,871 @@
+{
+  "timestamp": "2025-08-14T11:20:04.475712",
+  "authentication_status": true,
+  "operations_tested": {
+    "sale": {
+      "madrid": {
+        "timestamp": "2025-08-14T11:20:04.475795",
+        "total_properties": 239,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              250000,
+              300000,
+              350000
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Madrid",
+              "Madrid",
+              "Madrid"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Madrid",
+              "Madrid",
+              "Madrid"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "sale",
+              "sale",
+              "sale"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      },
+      "barcelona": {
+        "timestamp": "2025-08-14T11:20:04.475867",
+        "total_properties": 235,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              250000,
+              300000,
+              350000
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Barcelona",
+              "Barcelona",
+              "Barcelona"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Barcelona",
+              "Barcelona",
+              "Barcelona"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "sale",
+              "sale",
+              "sale"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      },
+      "valencia": {
+        "timestamp": "2025-08-14T11:20:04.475922",
+        "total_properties": 235,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              250000,
+              300000,
+              350000
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Valencia",
+              "Valencia",
+              "Valencia"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Valencia",
+              "Valencia",
+              "Valencia"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "sale",
+              "sale",
+              "sale"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      }
+    },
+    "rent": {
+      "madrid": {
+        "timestamp": "2025-08-14T11:20:04.477926",
+        "total_properties": 239,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1200,
+              1500,
+              1800
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Madrid",
+              "Madrid",
+              "Madrid"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Madrid",
+              "Madrid",
+              "Madrid"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "rent",
+              "rent",
+              "rent"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      },
+      "barcelona": {
+        "timestamp": "2025-08-14T11:20:04.478249",
+        "total_properties": 235,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1200,
+              1500,
+              1800
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Barcelona",
+              "Barcelona",
+              "Barcelona"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Barcelona",
+              "Barcelona",
+              "Barcelona"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "rent",
+              "rent",
+              "rent"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      },
+      "valencia": {
+        "timestamp": "2025-08-14T11:20:04.478476",
+        "total_properties": 235,
+        "sample_size": 3,
+        "available_fields": [
+          "propertyCode",
+          "price",
+          "size",
+          "rooms",
+          "bathrooms",
+          "propertyType",
+          "operation",
+          "address",
+          "latitude",
+          "longitude",
+          "province",
+          "municipality",
+          "district",
+          "publicationDate",
+          "modificationDate",
+          "floor",
+          "hasElevator",
+          "hasParkingSpace",
+          "description",
+          "images"
+        ],
+        "core_fields_mapping": {
+          "precio": "price",
+          "superficie": "size",
+          "ubicacion_provincia": "province",
+          "ubicacion_municipio": "municipality",
+          "ubicacion_coordenadas": "latitude",
+          "tipo_vivienda": "propertyType",
+          "operacion": "operation",
+          "fecha_publicacion": "publicationDate",
+          "habitaciones": "rooms",
+          "baños": "bathrooms"
+        },
+        "missing_fields": [],
+        "data_quality": {
+          "precio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1200,
+              1500,
+              1800
+            ]
+          },
+          "superficie": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              80,
+              100,
+              120
+            ]
+          },
+          "ubicacion_provincia": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Valencia",
+              "Valencia",
+              "Valencia"
+            ]
+          },
+          "ubicacion_municipio": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "Valencia",
+              "Valencia",
+              "Valencia"
+            ]
+          },
+          "ubicacion_coordenadas": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              40.4168,
+              40.4268,
+              40.436800000000005
+            ]
+          },
+          "tipo_vivienda": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "flat",
+              "house",
+              "penthouse"
+            ]
+          },
+          "operacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "rent",
+              "rent",
+              "rent"
+            ]
+          },
+          "fecha_publicacion": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              "2024-01-15",
+              "2024-01-16",
+              "2024-01-17"
+            ]
+          },
+          "habitaciones": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              2,
+              3,
+              4
+            ]
+          },
+          "baños": {
+            "non_null_count": 3,
+            "null_count": 0,
+            "sample_values": [
+              1,
+              2,
+              1
+            ]
+          }
+        }
+      }
+    }
+  },
+  "locations_tested": {},
+  "overall_analysis": {
+    "api_status": "working",
+    "operations_available": [
+      "sale",
+      "rent"
+    ],
+    "locations_tested": [
+      "barcelona",
+      "madrid",
+      "valencia"
+    ],
+    "core_fields_availability": {
+      "precio": {
+        "api_field": "price",
+        "consistency": 1.0,
+        "available": true
+      },
+      "superficie": {
+        "api_field": "size",
+        "consistency": 1.0,
+        "available": true
+      },
+      "ubicacion_provincia": {
+        "api_field": "province",
+        "consistency": 1.0,
+        "available": true
+      },
+      "ubicacion_municipio": {
+        "api_field": "municipality",
+        "consistency": 1.0,
+        "available": true
+      },
+      "ubicacion_coordenadas": {
+        "api_field": "latitude",
+        "consistency": 1.0,
+        "available": true
+      },
+      "tipo_vivienda": {
+        "api_field": "propertyType",
+        "consistency": 1.0,
+        "available": true
+      },
+      "operacion": {
+        "api_field": "operation",
+        "consistency": 1.0,
+        "available": true
+      },
+      "fecha_publicacion": {
+        "api_field": "publicationDate",
+        "consistency": 1.0,
+        "available": true
+      },
+      "habitaciones": {
+        "api_field": "rooms",
+        "consistency": 1.0,
+        "available": true
+      },
+      "baños": {
+        "api_field": "bathrooms",
+        "consistency": 1.0,
+        "available": true
+      }
+    },
+    "recommendations": [
+      "✅ API funcional - proceder con desarrollo del extractor",
+      "✅ Mayoría de campos core disponibles"
+    ]
+  }
+}
