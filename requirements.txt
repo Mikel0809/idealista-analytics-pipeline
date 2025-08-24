@@ -1,0 +1,20 @@
+# API y procesamiento de datos
+requests==2.31.0
+pandas==2.1.0
+numpy==1.25.2
+
+# Airflow
+apache-airflow==2.7.1
+apache-airflow-providers-google==10.1.0
+
+# BigQuery
+google-cloud-bigquery==3.11.4
+pyarrow==13.0.0
+
+# dbt
+dbt-core==1.5.1
+dbt-bigquery==1.5.1
+
+# Utilidades
+python-dotenv==1.0.0
+pydantic==2.3.0
