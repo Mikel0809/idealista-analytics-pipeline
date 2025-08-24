@@ -56,3 +56,6 @@ airflow/*.db
 
 # Misc
 .DS_Store
+
+# logs
+/logs
