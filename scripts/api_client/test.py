@@ -1,8 +1,8 @@
 import requests
 
-url = "https://idealista7.p.rapidapi.com/propertydetails"
+url = "https://idealista7.p.rapidapi.com/listbuildings"
 
-querystring = {"propertyId":"101535118","location":"es","language":"en"}
+querystring = {"order":"relevance","operation":"sale","locationId":"0-EU-ES-28-07-001-079","locationName":"Madrid","numPage":"1","maxItems":"40","location":"es","locale":"es"}
 
 headers = {
 	"x-rapidapi-key": "c6c0c2ce9dmsh09426791611cbf9p140451jsn73d5830bb4bb",
