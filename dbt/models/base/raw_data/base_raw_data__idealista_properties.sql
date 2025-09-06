@@ -38,5 +38,5 @@ with
         qualify rn = 1 --Data quality issues were reported from the API, as we do not have control over it, we are removing duplicates in dbt.
 
     )
-    
+
 select * from renamed
