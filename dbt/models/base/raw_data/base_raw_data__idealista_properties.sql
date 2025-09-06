@@ -32,9 +32,11 @@ with
             cast(hasAirConditioning as bool) as has_air_conditioning,
             cast(hasBoxRoom as bool) as has_box_room,
             cast(hasGarden as bool) as has_garden,
-            origin_location_name as origin_location_name
+            origin_location_name as origin_location_name,
+            row_number() over (partition by propertyCode) as rn
         from source
+        qualify rn = 1 --Data quality issues were reported from the API, as we do not have control over it, we are removing duplicates in dbt.
 
     )
-
+    
 select * from renamed
