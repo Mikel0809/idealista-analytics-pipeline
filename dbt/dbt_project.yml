@@ -27,6 +27,7 @@ models:
   idealista_analytics:
     # Config indicated by + and applies to all files under models/
     +materialized: view
+    +dbt-osmosis: "{model}.yml"
     
     base:
       +materialized: view

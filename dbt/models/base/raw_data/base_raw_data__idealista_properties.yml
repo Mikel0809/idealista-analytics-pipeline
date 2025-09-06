@@ -1,0 +1,61 @@
+version: 2
+models:
+  - name: base_raw_data__idealista_properties
+    columns:
+      - name: property_code
+        description: ''
+        data_tests:
+          - dbt_constraints.primary_key
+      - name: price
+        description: ''
+      - name: property_type
+        description: ''
+      - name: operation
+        description: ''
+      - name: size
+        description: ''
+      - name: rooms
+        description: ''
+      - name: bathrooms
+        description: ''
+      - name: address
+        description: ''
+      - name: province
+        description: ''
+      - name: municipality
+        description: ''
+      - name: location_id
+        description: ''
+      - name: latitude
+        description: ''
+      - name: longitude
+        description: ''
+      - name: url
+        description: ''
+      - name: description
+        description: ''
+      - name: status
+        description: ''
+      - name: phone_number_for_mobile_dialing
+        description: ''
+      - name: contact_name
+        description: ''
+      - name: user_type
+        description: ''
+      - name: has_parking_space
+        description: ''
+      - name: price_by_area
+        description: ''
+      - name: has_swimming_pool
+        description: ''
+      - name: has_terrace
+        description: ''
+      - name: has_air_conditioning
+        description: ''
+      - name: has_box_room
+        description: ''
+      - name: has_garden
+        description: ''
+      - name: origin_location_name
+        description: ''
+
