@@ -1,0 +1,31 @@
+# Testing
+pytest==8.3.4
+pytest-cov==5.0.0
+pytest-mock==3.14.0
+
+# Linting and format
+black==24.10.0
+flake8==7.1.1
+mypy==1.13.0
+pylint==3.3.2
+isort==5.13.2
+pre-commit==4.0.1
+
+# Documentation
+mkdocs==1.6.1
+mkdocs-material==9.5.48
+
+# Notebooks
+jupyter==1.1.1
+jupyterlab==4.3.4
+ipykernel==6.29.5
+notebook==7.3.2
+
+# Visualization
+matplotlib==3.9.3
+seaborn==0.13.2
+plotly==5.24.1
+
+# SQL Formatting
+sqlfluff==3.3.0
+sqlfmt==0.24.07

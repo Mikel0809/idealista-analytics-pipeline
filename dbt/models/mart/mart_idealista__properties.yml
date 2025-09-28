@@ -1,0 +1,205 @@
+version: 2
+
+models:
+  - name: mart_properties__evolution_analysis
+    description: "Final mart view for South Madrid real estate evolution analysis and KPI dashboard consumption. Contains all enriched property data with calculated metrics for price evolution tracking, emerging zones identification, and investment opportunity analysis."
+    columns:
+      # Original property fields
+      - name: property_code
+        description: "Unique identifier for each property from Idealista API"
+        data_type: string
+        data_tests:
+          - dbt_constraints.primary_key
+      - name: price
+        description: "Property price in euros"
+        data_type: float64
+      - name: property_type
+        description: "Type of property (e.g., flat, house, duplex)"
+        data_type: string
+      - name: operation
+        description: "Type of operation (sale or rent)"
+        data_type: string
+      - name: size
+        description: "Property size in square meters"
+        data_type: float64
+      - name: rooms
+        description: "Number of rooms in the property"
+        data_type: int64
+      - name: bathrooms
+        description: "Number of bathrooms in the property"
+        data_type: int64
+      - name: address
+        description: "Full address of the property"
+        data_type: string
+      - name: province
+        description: "Province where the property is located"
+        data_type: string
+      - name: municipality
+        description: "Municipality where the property is located"
+        data_type: string
+      - name: location_id
+        description: "Internal location identifier from Idealista"
+        data_type: string
+      - name: latitude
+        description: "Geographic latitude coordinate"
+        data_type: float64
+      - name: longitude
+        description: "Geographic longitude coordinate"
+        data_type: float64
+      - name: url
+        description: "URL link to the property listing on Idealista"
+        data_type: string
+      - name: description
+        description: "Property description text"
+        data_type: string
+      - name: status
+        description: "Current status of the property listing"
+        data_type: string
+      - name: phone_number_for_mobile_dialing
+        description: "Contact phone number for mobile dialing"
+        data_type: string
+      - name: contact_name
+        description: "Name of the contact person"
+        data_type: string
+      - name: user_type
+        description: "Type of user listing the property (owner, agency, etc.)"
+        data_type: string
+      - name: has_parking_space
+        description: "Boolean flag indicating if property has parking space"
+        data_type: bool
+      - name: price_by_area
+        description: "Price per square meter in euros"
+        data_type: float64
+      - name: has_swimming_pool
+        description: "Boolean flag indicating if property has swimming pool"
+        data_type: bool
+      - name: has_terrace
+        description: "Boolean flag indicating if property has terrace"
+        data_type: bool
+      - name: has_air_conditioning
+        description: "Boolean flag indicating if property has air conditioning"
+        data_type: bool
+      - name: has_box_room
+        description: "Boolean flag indicating if property has box room/storage"
+        data_type: bool
+      - name: has_garden
+        description: "Boolean flag indicating if property has garden"
+        data_type: bool
+      - name: origin_location_name
+        description: "Original location name from the data source"
+        data_type: string
+      - name: is_valid_record
+        description: "Data quality flag indicating if record passes validation checks"
+        data_type: bool
+      - name: processed_at
+        description: "Timestamp when the record was processed in staging"
+        data_type: timestamp
+
+      # Enriched geographic fields
+      - name: lat_zone
+        description: "Simplified latitude zone (rounded to 3 decimal places) for geographic aggregation"
+        data_type: float64
+      - name: lng_zone
+        description: "Simplified longitude zone (rounded to 3 decimal places) for geographic aggregation"
+        data_type: float64
+
+      # Segmentation fields for KPI analysis
+      - name: price_segment
+        description: "Price segmentation for market analysis: Budget (<200k), Mid-Range (200k-400k), High-End (400k-600k), Premium (>600k)"
+        data_type: string
+      - name: size_segment
+        description: "Size segmentation for property analysis: Small (<60m²), Medium (60-100m²), Large (100-150m²), Extra Large (>150m²)"
+        data_type: string
+      - name: premium_features_count
+        description: "Count of premium features (parking, pool, terrace, AC, garden) from 0 to 5 - key metric for property quality assessment"
+        data_type: int64
+
+      # Zone-level comparative metrics for emerging zones analysis
+      - name: avg_price_zone
+        description: "Average price for properties in the same geographic zone - baseline for zone comparison"
+        data_type: float64
+      - name: median_price_zone
+        description: "Median price for properties in the same geographic zone - robust central tendency measure"
+        data_type: float64
+      - name: min_price_zone
+        description: "Minimum price for properties in the same geographic zone"
+        data_type: float64
+      - name: max_price_zone
+        description: "Maximum price for properties in the same geographic zone"
+        data_type: float64
+      - name: stddev_price_zone
+        description: "Standard deviation of prices in the same geographic zone - volatility indicator"
+        data_type: float64
+      - name: avg_price_m2_zone
+        description: "Average price per square meter in the same geographic zone - key metric for price evolution analysis"
+        data_type: float64
+      - name: median_price_m2_zone
+        description: "Median price per square meter in the same geographic zone"
+        data_type: float64
+      - name: avg_size_zone
+        description: "Average property size in the same geographic zone"
+        data_type: float64
+      - name: median_size_zone
+        description: "Median property size in the same geographic zone"
+        data_type: float64
+      - name: properties_count_zone
+        description: "Total number of properties in the same geographic zone - market depth indicator"
+        data_type: int64
+      - name: property_types_count_zone
+        description: "Number of distinct property types in the same geographic zone - diversity indicator"
+        data_type: int64
+      - name: pct_parking_zone
+        description: "Percentage of properties with parking in the same geographic zone"
+        data_type: float64
+      - name: pct_pool_zone
+        description: "Percentage of properties with swimming pool in the same geographic zone"
+        data_type: float64
+      - name: pct_terrace_zone
+        description: "Percentage of properties with terrace in the same geographic zone"
+        data_type: float64
+      - name: pct_ac_zone
+        description: "Percentage of properties with air conditioning in the same geographic zone"
+        data_type: float64
+      - name: pct_garden_zone
+        description: "Percentage of properties with garden in the same geographic zone"
+        data_type: float64
+
+      # Property type benchmarking metrics
+      - name: avg_price_type
+        description: "Average price for the same property type and operation - type-specific benchmark"
+        data_type: float64
+      - name: median_price_type
+        description: "Median price for the same property type and operation"
+        data_type: float64
+      - name: min_price_type
+        description: "Minimum price for the same property type and operation"
+        data_type: float64
+      - name: max_price_type
+        description: "Maximum price for the same property type and operation"
+        data_type: float64
+      - name: avg_price_m2_type
+        description: "Average price per square meter for the same property type and operation"
+        data_type: float64
+      - name: median_price_m2_type
+        description: "Median price per square meter for the same property type and operation"
+        data_type: float64
+      - name: properties_count_type
+        description: "Total number of properties of the same type and operation"
+        data_type: int64
+
+      # Key Performance Indicators (KPIs) for South Madrid real estate analysis
+      - name: price_deviation_zone_pct
+        description: "KPI: Percentage deviation of property price from zone average. Key metric for identifying undervalued/overvalued properties"
+        data_type: float64
+      - name: price_m2_deviation_zone_pct
+        description: "KPI: Percentage deviation of price per m² from zone average. Critical for price evolution tracking"
+        data_type: float64
+      - name: price_deviation_type_pct
+        description: "KPI: Percentage deviation of property price from property type average. Useful for type-specific analysis"
+        data_type: float64
+      - name: competitiveness_index
+        description: "KPI: Competitiveness ratio measuring value for money. Higher values indicate better deals (more features for relative price)"
+        data_type: float64
+      - name: opportunity_classification
+        description: "KPI: Investment opportunity classification for emerging zones analysis. Values: Opportunity (undervalued with features), Overvalued (expensive), Market (fair value)"
+        data_type: string

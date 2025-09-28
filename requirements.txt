@@ -1,0 +1,37 @@
+# Madrid Real Estate Analytics Pipeline
+# Python 3.12 compatible dependencies
+
+# ====================
+# Data Processing
+# ====================
+pandas==2.3.2
+numpy==2.3.3
+python-dotenv==1.0.1
+
+# ====================
+# API & Web
+# ====================
+requests==2.32.3
+
+# ====================
+# Google Cloud & BigQuery
+# ====================
+google-cloud-bigquery==3.38.0
+google-cloud-storage==2.19.0
+google-auth==2.40.3
+pandas-gbq==0.29.2
+pyarrow==21.0.0
+db-dtypes==1.4.3
+
+# ====================
+# dbt (Data Transformation)
+# ====================
+dbt-core==1.10.13
+dbt-bigquery==1.10.2
+dbt-elementary==0.17.0
+
+# ====================
+# Apache Airflow (Orchestration)
+# ====================
+apache-airflow==3.1.0
+apache-airflow-providers-google==10.29.1

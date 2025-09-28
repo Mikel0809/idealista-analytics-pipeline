@@ -1,0 +1,168 @@
+/.bmad-core
+/.windsurf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+
+# ==========================================
+# Environment & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+service-account.json
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Logs and Databases
+# ==========================================
+*.log
+logs/
+*.sqlite
+*.db
+
+# ==========================================
+# Data Files (keep structure, ignore content)
+# ==========================================
+data/*.csv
+data/*.json
+data/*.parquet
+output/
+*.csv
+!.gitkeep
+
+# ==========================================
+# Airflow
+# ==========================================
+airflow/logs/
+airflow/airflow.db
+airflow/airflow-webserver.pid
+airflow/standalone_admin_password.txt
+airflow/webserver_config.py
+airflow/*.cfg
+!airflow/airflow.cfg.example
+
+# ==========================================
+# dbt
+# ==========================================
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+dbt/.user.yml
+
+# ==========================================
+# BigQuery
+# ==========================================
+*.bq
+bq_cache/
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==========================================
+# Testing
+# ==========================================
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+*.cover
+.hypothesis/
+
+# ==========================================
+# Documentation
+# ==========================================
+docs/_build/
+site/
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+.cache/
+
+# ==========================================
+# Project Specific
+# ==========================================
+.windsurf/
+.bmad-core/
+README_OLD.md
+airflow/config.yml
+airflow/simple_auth_manager_passwords.json*
+airflow/airflow.db-wal
+airflow/airflow.db-shm
+airflow/airflow.db
+airflow/airflow.db-journal
+
+# Credentials
+*.json
+*.pem
+*.key
+
+# Misc
+.DS_Store

@@ -1,0 +1,88 @@
+version: 2
+models:
+  - name: base_raw_data_idealista__properties
+    description: "Base model for raw Idealista properties data with basic transformations and data type casting"
+    columns:
+      - name: property_code
+        description: "Unique identifier for each property from Idealista API"
+        data_type: string
+        data_tests:
+          - dbt_constraints.primary_key
+      - name: price
+        description: "Property price in euros"
+        data_type: float64
+      - name: property_type
+        description: "Type of property (e.g., flat, house, duplex)"
+        data_type: string
+      - name: operation
+        description: "Type of operation (sale or rent)"
+        data_type: string
+      - name: size
+        description: "Property size in square meters"
+        data_type: float64
+      - name: rooms
+        description: "Number of rooms in the property"
+        data_type: int64
+      - name: bathrooms
+        description: "Number of bathrooms in the property"
+        data_type: int64
+      - name: address
+        description: "Full address of the property"
+        data_type: string
+      - name: province
+        description: "Province where the property is located"
+        data_type: string
+      - name: municipality
+        description: "Municipality where the property is located"
+        data_type: string
+      - name: location_id
+        description: "Internal location identifier from Idealista"
+        data_type: string
+      - name: latitude
+        description: "Geographic latitude coordinate"
+        data_type: float64
+      - name: longitude
+        description: "Geographic longitude coordinate"
+        data_type: float64
+      - name: url
+        description: "URL link to the property listing on Idealista"
+        data_type: string
+      - name: description
+        description: "Property description text"
+        data_type: string
+      - name: status
+        description: "Current status of the property listing"
+        data_type: string
+      - name: phone_number_for_mobile_dialing
+        description: "Contact phone number for mobile dialing"
+        data_type: string
+      - name: contact_name
+        description: "Name of the contact person"
+        data_type: string
+      - name: user_type
+        description: "Type of user listing the property (owner, agency, etc.)"
+        data_type: string
+      - name: has_parking_space
+        description: "Boolean flag indicating if property has parking space"
+        data_type: bool
+      - name: price_by_area
+        description: "Price per square meter in euros"
+        data_type: float64
+      - name: has_swimming_pool
+        description: "Boolean flag indicating if property has swimming pool"
+        data_type: bool
+      - name: has_terrace
+        description: "Boolean flag indicating if property has terrace"
+        data_type: bool
+      - name: has_air_conditioning
+        description: "Boolean flag indicating if property has air conditioning"
+        data_type: bool
+      - name: has_box_room
+        description: "Boolean flag indicating if property has box room/storage"
+        data_type: bool
+      - name: has_garden
+        description: "Boolean flag indicating if property has garden"
+        data_type: bool
+      - name: origin_location_name
+        description: "Original location name from the data source"
+        data_type: string

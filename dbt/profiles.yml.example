@@ -1,0 +1,28 @@
+# dbt profiles.yml template
+# Copy this file to ~/.dbt/profiles.yml and update with your BigQuery credentials
+
+idealista_analytics:
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth  # or service-account
+      project: your-gcp-project-id  # Replace with your GCP project ID
+      dataset: dbt_staging  # Default dataset for dbt models
+      threads: 1
+      timeout_seconds: 300
+      location: EU  # BigQuery location
+      priority: interactive
+      retries: 1
+      
+    prod:
+      type: bigquery
+      method: oauth  # or service-account
+      project: your-gcp-project-id  # Replace with your GCP project ID
+      dataset: dbt_prod
+      threads: 4
+      timeout_seconds: 600
+      location: EU
+      priority: batch
+      retries: 3
+      
+  target: dev  # Default target
